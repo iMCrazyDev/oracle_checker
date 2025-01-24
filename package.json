@@ -1,0 +1,20 @@
+{
+  "name": "oracle_checker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@evaafi/sdk": "^0.6.2-c",
+    "@types/node": "^22.10.10",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.7.3"
+  }
+}
