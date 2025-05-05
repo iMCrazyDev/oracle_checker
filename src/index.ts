@@ -61,9 +61,8 @@ async function main() {
         try {
             const icp = await checkSource(new IcpPriceSource('6khmc-aiaaa-aaaap-ansfq-cai.raw.icp0.io', oracles), oracles);
             const backend = await checkSource(new BackendPriceSource('evaa.space', oracles), oracles);
-            const iota = await checkSource(new IotaPriceSource('api.stardust-mainnet.iotaledger.net', oracles), oracles);
-
-            if (!iota || (!backend && !icp)) {
+            //const iota = await checkSource(new IotaPriceSource('api.stardust-mainnet.iotaledger.net', oracles), oracles);
+            if (/*!iota || */(!backend && !icp)) {
                 errors++;
                 await new Promise(resolve => setTimeout(resolve, SLEEP_TIME * 1000));
                 continue;
